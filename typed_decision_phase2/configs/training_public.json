@@ -1,0 +1,175 @@
+{
+  "publication_view": true,
+  "seeds": [
+    20261006,
+    1729,
+    2718
+  ],
+  "s0": 20261006,
+  "common": {
+    "max_len": 512,
+    "head_max_len": 192,
+    "lr_encoder": 2.5e-05,
+    "lr_head": 0.0001,
+    "epochs": 4,
+    "micro_batch": 8,
+    "accumulation": 8,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "scheduler": "cosine exact ceil to1e-6",
+    "partial_accumulation": "same fixed /8 V1 rule even final partial window",
+    "shared_fit": "float64 NLL; L-BFGS-B logT bounds [.05,100], starts .5/1/5; maxiter500 ftol1e-12 gtol1e-9; select by C_T objective only"
+  },
+  "view_note": "Superseded native_historical_view source descriptor omitted; see authoritative calibration_views.json.",
+  "runs": {
+    "B1_grpo_ce_20261006": {
+      "recipe": "grpo_ce",
+      "seed": 20261006,
+      "G_n": 2700
+    },
+    "B1_grpo_ce_1729": {
+      "recipe": "grpo_ce",
+      "seed": 1729,
+      "G_n": 2700
+    },
+    "B1_grpo_ce_2718": {
+      "recipe": "grpo_ce",
+      "seed": 2718,
+      "G_n": 2700
+    },
+    "B1_ce_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "G_n": 2700
+    },
+    "B1_ce_1729": {
+      "recipe": "ce",
+      "seed": 1729,
+      "G_n": 2700
+    },
+    "B1_ce_2718": {
+      "recipe": "ce",
+      "seed": 2718,
+      "G_n": 2700
+    },
+    "B3_arc_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "target": "arc",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "B3_csqa_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "target": "csqa",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "B3_obqa_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "target": "obqa",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "B3_matched_all_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "target": "matched_all",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D2_ce_100_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "budget_n": 100,
+      "G_n": 300
+    },
+    "D2_ce_300_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "budget_n": 300,
+      "G_n": 900
+    },
+    "D3_smooth_20261006": {
+      "recipe": "ce",
+      "seed": 20261006,
+      "smoothing": 0.1,
+      "G_n": 2700
+    },
+    "D3_smooth_1729": {
+      "recipe": "ce",
+      "seed": 1729,
+      "smoothing": 0.1,
+      "G_n": 2700
+    },
+    "D3_smooth_2718": {
+      "recipe": "ce",
+      "seed": 2718,
+      "smoothing": 0.1,
+      "G_n": 2700
+    },
+    "D4_arc_1729": {
+      "recipe": "ce",
+      "seed": 1729,
+      "target": "arc",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_csqa_1729": {
+      "recipe": "ce",
+      "seed": 1729,
+      "target": "csqa",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_obqa_1729": {
+      "recipe": "ce",
+      "seed": 1729,
+      "target": "obqa",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_matched_all_1729": {
+      "recipe": "ce",
+      "seed": 1729,
+      "target": "matched_all",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_arc_2718": {
+      "recipe": "ce",
+      "seed": 2718,
+      "target": "arc",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_csqa_2718": {
+      "recipe": "ce",
+      "seed": 2718,
+      "target": "csqa",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_obqa_2718": {
+      "recipe": "ce",
+      "seed": 2718,
+      "target": "obqa",
+      "G_n": 1800,
+      "C_T_n": 96
+    },
+    "D4_matched_all_2718": {
+      "recipe": "ce",
+      "seed": 2718,
+      "target": "matched_all",
+      "G_n": 1800,
+      "C_T_n": 96
+    }
+  },
+  "private_inputs_withheld": [
+    "G_ids",
+    "C_T_ids"
+  ],
+  "not_a_runnable_replacement_for_frozen_training_config": true
+}

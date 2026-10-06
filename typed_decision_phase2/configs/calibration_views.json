@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-05T20:27:24.171046+00:00",
+  "Raw": "T=1 true pre-temperature logits",
+  "Native_Historical": "Actual checkpoint-native/inherited temperature; fresh FT inherited Base T is explicitly unrefitted and not claimed calibrated; V1 FT uses original historical T=5",
+  "Shared_fit": "Only C_T, identical float64 fitting procedure; main probability quality view",
+  "supersedes": "P006 descriptive borrow-T5 proposal for fresh FT; weights/recipes/config file unchanged; correction before any fresh model C_T/E_old/E_new inference",
+  "background_model": "v1_ft_history is reused V1 weights, not B1 R0/s0 independent-RNG run"
+}

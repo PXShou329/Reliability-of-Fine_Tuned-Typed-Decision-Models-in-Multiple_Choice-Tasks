@@ -1,0 +1,15 @@
+purpose,model,n,gains,regressions,unchanged_predictions
+E_old,v1_ft_history,600,112,46,367
+E_old,B1_grpo_ce_20261006,600,112,58,356
+E_old,B1_ce_20261006,600,111,55,348
+E_old,B1_grpo_ce_1729,600,109,55,352
+E_old,B1_ce_1729,600,114,61,333
+E_old,B1_grpo_ce_2718,600,115,49,360
+E_old,B1_ce_2718,600,117,54,349
+E_new,v1_ft_history,240,43,32,126
+E_new,B1_grpo_ce_20261006,240,50,29,129
+E_new,B1_ce_20261006,240,52,29,125
+E_new,B1_grpo_ce_1729,240,42,24,138
+E_new,B1_ce_1729,240,53,27,125
+E_new,B1_grpo_ce_2718,240,57,28,128
+E_new,B1_ce_2718,240,54,27,129

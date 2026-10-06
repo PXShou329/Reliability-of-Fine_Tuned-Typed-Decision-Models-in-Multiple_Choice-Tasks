@@ -1,0 +1,626 @@
+{
+  "publication_view": true,
+  "models": {
+    "base": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "v1_ft_history": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        5.0,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {},
+      "reused_background": true,
+      "controlled_B1_recipe": false
+    },
+    "clef": {
+      "class": "Clef-Flash",
+      "device": "cuda:0",
+      "backbone_precision": "NF4 double quantization",
+      "compute_dtype": "torch.bfloat16",
+      "decision_head_dtype": "torch.bfloat16",
+      "backend": "official joint_schema_model.py",
+      "max_length": 16384,
+      "parameter_count_representation_dependent": 5846735092,
+      "model_memory_footprint_bytes": 7765103400
+    },
+    "kev": {
+      "class": "Kev-4B",
+      "revision": "6cfce5c2fa4b4bd64026336ab649c5ca78857d52",
+      "base_revision_pinned": "1001bb4d826a52d1f399e183466143f4da7b741b",
+      "runtime_commit": "0bcaa7243043b28ca5f8f2f99cc004a9d7eed720",
+      "backbone_precision": "BF16 merged LoRA",
+      "head_dtype": "torch.float32",
+      "native_temperature": 2.406050072164233,
+      "backend": "official torch forward row path; sdpa; unfused; no CUDA graphs",
+      "date_facts": false,
+      "parameter_count": 4207062528,
+      "transport_override": "verified pinned local base only"
+    },
+    "generative": {
+      "class": "Qwen3.5-4B generative",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "precision": "BF16",
+      "decoding": "greedy do_sample=False max_new_tokens=8",
+      "enable_thinking": false,
+      "text_only": true,
+      "parser": "strip whitespace; fullmatch single capital legal A..letter; no guessing from prose",
+      "parameter_count": 4205751296
+    },
+    "multilingual": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 321908995,
+      "max_len": 1024,
+      "head_max_len": 256,
+      "native_temperatures": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "temperature_by_options": {}
+    },
+    "B1_grpo_ce_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B1_grpo_ce_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B1_grpo_ce_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B1_ce_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B1_ce_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B1_ce_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B3_arc_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B3_csqa_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B3_obqa_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "B3_matched_all_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D2_ce_100_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D2_ce_300_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D3_smooth_20261006": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D3_smooth_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D3_smooth_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_arc_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_csqa_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_obqa_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_matched_all_1729": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_arc_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_csqa_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_obqa_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    },
+    "D4_matched_all_2718": {
+      "class": "Laya",
+      "weights_dtype": "torch.float32",
+      "compute_dtype": "torch.bfloat16",
+      "backend": "sdpa eager",
+      "device": "cuda:0",
+      "parameter_count": 421293827,
+      "max_len": 512,
+      "head_max_len": 192,
+      "native_temperatures": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.5,
+        "choice:2": 1.9063563346862793
+      }
+    }
+  },
+  "paths_and_weight_files_withheld": true
+}

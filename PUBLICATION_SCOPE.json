@@ -1,0 +1,27 @@
+{
+  "project": "Typed Decision Reliability: MCQA Phase1/Phase2 and MacroLab",
+  "included_python_snapshots": 78,
+  "aggregate_CSV_count": 27,
+  "original_sources_modified": false,
+  "new_experiments_or_model_calls": false,
+  "withheld_categories": [
+    "credentials and personal documents",
+    "raw requests/responses/traces",
+    "question content and IDs",
+    "gold and private evaluator data",
+    "private MacroLab generator/oracle/task seed",
+    "split-reconstruction code",
+    "models/checkpoints/optimizer/RNG state",
+    "logs/cache/venv",
+    "original full protocol locks and large archives",
+    "case-specific reports and review packets"
+  ],
+  "limits": [
+    "Not a turnkey reconstruction of the exact original private experiment.",
+    "Historical documents may link to artifacts deliberately not distributed.",
+    "Original frozen code/config hashes remain historical; no public hash is represented as the original frozen lock."
+  ],
+  "publication_authorized": true,
+  "destination_repository": "PXShou329/Reliability-of-Fine_Tuned-Typed-Decision-Models-in-Multiple_Choice-Tasks",
+  "publication_scope": "Only the exact reviewed allowlist; no original private Git history"
+}

@@ -1,0 +1,36 @@
+{
+  "source_phase": "V1 observed environment",
+  "python_version": "3.12.10",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "laya": "0.3.27",
+    "transformers": "5.10.2",
+    "datasets": "5.1.0",
+    "accelerate": "1.15.0",
+    "huggingface_hub": "1.33.0",
+    "bitsandbytes": "0.50.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pillow": "12.3.0"
+  },
+  "torch_cuda": "12.8",
+  "cuda_available": true,
+  "ram_total_bytes": 100515135488,
+  "gpu_name": "NVIDIA GeForce RTX 5080",
+  "compute_capability": [
+    12,
+    0
+  ],
+  "gpu_total_bytes": 17066033152,
+  "torch_cuda_arch_list": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "phase2_note": "V2 used a read-only V1 dependency base plus its own overlay; this is not an independent complete environment lock."
+}

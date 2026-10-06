@@ -1,0 +1,90 @@
+[
+  {
+    "source": "typed_decision_mcqa_15h/archive_old.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/finish_diagnostics.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/package_delivery.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/prepare_data.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/replay_question_issues.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/report_text_cleanup.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/review_annotations.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/review_clef_errors.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/review_top_cases.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/select_case_review.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/validate_delivery.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/write_citation_check.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_mcqa_15h/write_reports.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/archive_delivery.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/bootstrap.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/normalize_reports.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/prepare_data.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/preserve_pre_sources.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/protect_finish.py",
+    "reason": "withheld split reconstruction, case-specific content, report generator or host/archive maintenance"
+  },
+  {
+    "source": "typed_decision_phase2/macrolab/generate.py",
+    "reason": "private generator/oracle or tests depending on withheld oracle"
+  },
+  {
+    "source": "typed_decision_phase2/macrolab/oracle.py",
+    "reason": "private generator/oracle or tests depending on withheld oracle"
+  },
+  {
+    "source": "typed_decision_phase2/macrolab/tests.py",
+    "reason": "private generator/oracle or tests depending on withheld oracle"
+  }
+]

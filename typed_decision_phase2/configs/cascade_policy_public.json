@@ -1,0 +1,18 @@
+{
+  "publication_view": true,
+  "small": "B1_grpo_ce_20261006",
+  "expert": "clef",
+  "small_T": 8.408344618944533,
+  "policy": "bypass",
+  "tau": null,
+  "random_small_coverage": 0.0,
+  "n": 150,
+  "expert_accuracy": 0.9333333333333333,
+  "selection_rule": "max coverage with >=30 auto samples and calibration accuracy loss<=.02; tie conservative tau; else bypass",
+  "test_target": {
+    "accuracy_loss_pp": 2,
+    "mean_latency_reduction_fraction": 0.2
+  },
+  "random_rule": "int(SHA256(item_id),16)/2**256 < fixed C_gate small coverage",
+  "C_gate_ids_withheld": true
+}

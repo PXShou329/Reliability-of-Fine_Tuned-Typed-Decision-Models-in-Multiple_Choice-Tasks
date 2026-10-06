@@ -1,0 +1,66 @@
+{
+  "publication_view": true,
+  "development_families": 12,
+  "formal_episodes": 40,
+  "reuse_n": 20,
+  "novel_n": 20,
+  "signature_probe_n": 50,
+  "signature_bound": "finite diagnostic behavior signature; not a formal equivalence proof",
+  "candidate_programs": 4680,
+  "nondegenerate_families": 534,
+  "development_inputs": {
+    "length": [
+      3,
+      8
+    ],
+    "values": [
+      -9,
+      9
+    ]
+  },
+  "formal_hidden_inputs": {
+    "length": [
+      9,
+      12
+    ],
+    "values": [
+      -25,
+      25
+    ]
+  },
+  "public_demo_n": 2,
+  "support_n": 5,
+  "hidden_n": 10,
+  "max_primitive_steps": 4,
+  "max_candidates": 4,
+  "max_model_calls": 20,
+  "conditions": [
+    "M0",
+    "M1",
+    "M2",
+    "random",
+    "enumeration"
+  ],
+  "model": "B1_grpo_ce_20261006",
+  "reference_model": "clef",
+  "enumeration_order": "increasing length then primitive Cartesian order; prune using only2 public demonstrations, first4 compatible candidates get support tests; enumeration bound4680; real preprocessing cost recorded",
+  "library_admission": "first actual support-passing candidate per development episode; deduplicate; <=12 tools; no hidden ranking",
+  "M0_final": "last complete candidate; no support observations",
+  "M1_M2_final": "model may KEEP a previously visible support-passing candidate via typed action; otherwise last complete candidate",
+  "no_weight_updates": true,
+  "oracle_interpreter_property_comparisons": 234000,
+  "bounds": {
+    "list_length": 12,
+    "integer_abs": 1000000,
+    "runtime": "at most4 bounded list operations; no external capabilities"
+  },
+  "E_new_independent": true,
+  "input_budget": {
+    "Laya_max_len": 1024,
+    "Laya_head_max_len": 256,
+    "Clef_max_length": 16384
+  },
+  "observation": "two demos, current program, last support result/counterexample plus all previously passing candidates; no M0 feedback",
+  "reference_library": "same frozen Laya-generated library (transfer reference, not independently expert-generated tools)",
+  "private_task_seed_withheld": true
+}

@@ -1,0 +1,6 @@
+label,unique_rotation_safe_questions,FT_seed,probability_view,flip_rate_percent,mean_aligned_TV_drift
+Base,235,not applicable,Shared_fit,63.09371184371185,0.10121981257272632
+G+CE s0,235,20261006,Shared_fit,51.61852036852037,0.11701599609404756
+CE s0,235,20261006,Shared_fit,51.19505494505494,0.12053025003825198
+Kev,235,not applicable,Shared_fit,18.688394938394936,0.09639136564454155
+Clef,235,not applicable,Shared_fit,8.424353424353423,0.042782745215304376

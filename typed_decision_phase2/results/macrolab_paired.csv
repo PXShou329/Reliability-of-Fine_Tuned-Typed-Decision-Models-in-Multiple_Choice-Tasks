@@ -1,0 +1,9 @@
+model,split,A,B,difference,ci95_low,ci95_high,family_clusters,n,replicates,seed,exploratory
+B1_grpo_ce_20261006,reuse,M1,M0,0.0,0.0,0.0,12,20,10000,260622,True
+B1_grpo_ce_20261006,reuse,M2,M1,0.0,0.0,0.0,12,20,10000,260622,True
+B1_grpo_ce_20261006,novel_composition,M1,M0,0.0,0.0,0.0,20,20,10000,260622,True
+B1_grpo_ce_20261006,novel_composition,M2,M1,0.0,0.0,0.0,20,20,10000,260622,True
+clef,reuse,M1,M0,0.0,0.0,0.0,12,20,10000,260622,True
+clef,reuse,M2,M1,0.0,0.0,0.0,12,20,10000,260622,True
+clef,novel_composition,M1,M0,0.0,0.0,0.0,20,20,10000,260622,True
+clef,novel_composition,M2,M1,0.0,0.0,0.0,20,20,10000,260622,True

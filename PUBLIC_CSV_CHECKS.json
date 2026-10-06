@@ -1,0 +1,758 @@
+{
+  "scope": "Packaging checks of saved aggregate CSVs, not a new metric recomputation",
+  "files": [
+    {
+      "public_file": "typed_decision_mcqa_15h/results/model_comparison.csv",
+      "rows": 3,
+      "kept_columns": [
+        "model",
+        "accuracy",
+        "brier",
+        "nll",
+        "ece"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "ade6870b0aedcb0799d6862271cf69f0685499d45bdd382b39488f23109c402e"
+    },
+    {
+      "public_file": "typed_decision_mcqa_15h/results/metrics_by_dataset.csv",
+      "rows": 9,
+      "kept_columns": [
+        "model",
+        "dataset",
+        "n",
+        "accuracy",
+        "brier",
+        "nll",
+        "ece",
+        "nll_clipped",
+        "latency_median_seconds",
+        "latency_p90_seconds",
+        "latency_p95_seconds",
+        "high_confidence_wrong_n",
+        "high_confidence_n"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "eea6b5bafded20950a76640d856ad778241a32613f12585b701d0efefae76645"
+    },
+    {
+      "public_file": "typed_decision_mcqa_15h/results/calibration.csv",
+      "rows": 135,
+      "kept_columns": [
+        "model",
+        "dataset",
+        "bin",
+        "lower",
+        "upper",
+        "n",
+        "accuracy",
+        "confidence"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "505d341b6079aecd2781346ac4a2fa5acefcd956d024872778dda6a225af6ad5"
+    },
+    {
+      "public_file": "typed_decision_mcqa_15h/results/high_confidence.csv",
+      "rows": 12,
+      "kept_columns": [
+        "model",
+        "dataset",
+        "n",
+        "high_confidence_n",
+        "coverage",
+        "wrong_n",
+        "accuracy_when_confidence_ge_point9",
+        "mean_confidence",
+        "accuracy"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "fc49ce5ffc1eeb229fbc9ed22d3cbf35d9c1a58442f92aa9b76f760aa41195e2"
+    },
+    {
+      "public_file": "typed_decision_mcqa_15h/results/selective_accuracy.csv",
+      "rows": 36,
+      "kept_columns": [
+        "model",
+        "dataset",
+        "retained_fraction",
+        "retained_n",
+        "accuracy",
+        "min_retained_confidence"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "0f4a8bfa1eb225003b880a00a403964b013aae1250238044b5fdb1f0facfa25e"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/baseline_completion.csv",
+      "rows": 128,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "view",
+        "dataset",
+        "planned_n",
+        "valid_n",
+        "invalid_or_missing_n",
+        "correct",
+        "accuracy",
+        "nll",
+        "brier",
+        "ece15",
+        "ece10",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "entropy",
+        "margin",
+        "logit_sd",
+        "conf0.7_accepted",
+        "conf0.7_coverage",
+        "conf0.7_wrong",
+        "conf0.7_error_rate",
+        "conf0.9_accepted",
+        "conf0.9_coverage",
+        "conf0.9_wrong",
+        "conf0.9_error_rate",
+        "conf0.95_accepted",
+        "conf0.95_coverage",
+        "conf0.95_wrong",
+        "conf0.95_error_rate",
+        "selective_0.5",
+        "selective_0.7",
+        "selective_0.9",
+        "pooled_ece15"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "7fd973f6b4f98476e465f8598f4d1b0e6f2c109d876ef10f4c3e7278450f3054"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/ablation_by_seed.csv",
+      "rows": 54,
+      "kept_columns": [
+        "seed",
+        "recipe",
+        "smoothing",
+        "purpose",
+        "model",
+        "view",
+        "dataset",
+        "planned_n",
+        "valid_n",
+        "invalid_or_missing_n",
+        "correct",
+        "accuracy",
+        "nll",
+        "brier",
+        "ece15",
+        "ece10",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "entropy",
+        "margin",
+        "logit_sd",
+        "conf0.7_accepted",
+        "conf0.7_coverage",
+        "conf0.7_wrong",
+        "conf0.7_error_rate",
+        "conf0.9_accepted",
+        "conf0.9_coverage",
+        "conf0.9_wrong",
+        "conf0.9_error_rate",
+        "conf0.95_accepted",
+        "conf0.95_coverage",
+        "conf0.95_wrong",
+        "conf0.95_error_rate",
+        "selective_0.5",
+        "selective_0.7",
+        "selective_0.9",
+        "pooled_ece15"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "e390772bbc09dff98a79a741b9e589e61409c2dfe945b31cb7506114710f21fe"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/calibration_comparison.csv",
+      "rows": 572,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "view",
+        "dataset",
+        "planned_n",
+        "valid_n",
+        "invalid_or_missing_n",
+        "correct",
+        "accuracy",
+        "nll",
+        "brier",
+        "ece15",
+        "ece10",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "entropy",
+        "margin",
+        "logit_sd",
+        "conf0.7_accepted",
+        "conf0.7_coverage",
+        "conf0.7_wrong",
+        "conf0.7_error_rate",
+        "conf0.9_accepted",
+        "conf0.9_coverage",
+        "conf0.9_wrong",
+        "conf0.9_error_rate",
+        "conf0.95_accepted",
+        "conf0.95_coverage",
+        "conf0.95_wrong",
+        "conf0.95_error_rate",
+        "selective_0.5",
+        "selective_0.7",
+        "selective_0.9",
+        "pooled_ece15"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "67e789d8b880890e1314d301749d0845177a4b10bfed7f41aaf612279fdcf037"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/cascade_metrics.csv",
+      "rows": 16,
+      "kept_columns": [
+        "condition",
+        "dataset",
+        "n",
+        "valid_n",
+        "correct",
+        "accuracy",
+        "small_calls",
+        "expert_calls",
+        "expert_call_rate",
+        "small_coverage",
+        "small_conditional_error",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "summed_request_seconds",
+        "live"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "3b54d734cba06f1da633671baf7e50ff7762d1f7de603f01e8f6a548e866ad9f"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/cascade_paired.csv",
+      "rows": 6,
+      "kept_columns": [
+        "comparison",
+        "metric",
+        "difference",
+        "ci95_low",
+        "ci95_high",
+        "n",
+        "replicates",
+        "seed",
+        "cluster"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "3ba622d78d6a4e820b1ef0b314fd1108ad9f35d67a728f2108af8c2f7d711ee5"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/completion_matrix.csv",
+      "rows": 12,
+      "kept_columns": [
+        "module",
+        "status",
+        "planned_model_conditions",
+        "completed_model_conditions",
+        "planned_conditions",
+        "completed_conditions",
+        "condition_unit",
+        "planned_outputs",
+        "completed_outputs",
+        "actual_output_exists",
+        "note"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "17c22a5de6f631b6f098aa91021b7d5039f4a06e6c183dd597a1fca80dbee1e9"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/data_budget.csv",
+      "rows": 18,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "view",
+        "dataset",
+        "planned_n",
+        "valid_n",
+        "invalid_or_missing_n",
+        "correct",
+        "accuracy",
+        "nll",
+        "brier",
+        "ece15",
+        "ece10",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "entropy",
+        "margin",
+        "logit_sd",
+        "conf0.7_accepted",
+        "conf0.7_coverage",
+        "conf0.7_wrong",
+        "conf0.7_error_rate",
+        "conf0.9_accepted",
+        "conf0.9_coverage",
+        "conf0.9_wrong",
+        "conf0.9_error_rate",
+        "conf0.95_accepted",
+        "conf0.95_coverage",
+        "conf0.95_wrong",
+        "conf0.95_error_rate",
+        "selective_0.5",
+        "selective_0.7",
+        "selective_0.9",
+        "pooled_ece15",
+        "samples_per_dataset",
+        "unique_G_n",
+        "item_exposures",
+        "optimizer_steps",
+        "training_seconds",
+        "B1_900_point_reused"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "6fec9471750f1af19a6528c6727e44ba4859d14a11398e206e79d7fd47760a56"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/gain_regression.csv",
+      "rows": 14,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "n",
+        "gains",
+        "regressions",
+        "unchanged_predictions"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "17bd5d7026a4dffa9cbef112255d63f708133db7de9858bd1ac543aab5428bae"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/macrolab_metrics.csv",
+      "rows": 16,
+      "kept_columns": [
+        "model",
+        "condition",
+        "split",
+        "n",
+        "completed_n",
+        "missing_or_failed_n",
+        "success_n",
+        "task_success",
+        "per_input_accuracy",
+        "mean_model_calls",
+        "mean_verifier_calls",
+        "mean_primitive_steps",
+        "library_episode_use_rate",
+        "mean_model_latency_ms",
+        "mean_episode_wall_ms",
+        "ambiguous_demonstration_n"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "a1cd7c2bff600c7cd2360d666bd2d718810f383a96f6ebbd79be9716cb13dc70"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/macrolab_paired.csv",
+      "rows": 8,
+      "kept_columns": [
+        "model",
+        "split",
+        "A",
+        "B",
+        "difference",
+        "ci95_low",
+        "ci95_high",
+        "family_clusters",
+        "n",
+        "replicates",
+        "seed",
+        "exploratory"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "c0ffdea195754620a684b667d3efe786ec03f0c5fe2f162ffaaacfa7435ab3e2"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/mcqa_metrics.csv",
+      "rows": 572,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "view",
+        "dataset",
+        "planned_n",
+        "valid_n",
+        "invalid_or_missing_n",
+        "correct",
+        "accuracy",
+        "nll",
+        "brier",
+        "ece15",
+        "ece10",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "entropy",
+        "margin",
+        "logit_sd",
+        "conf0.7_accepted",
+        "conf0.7_coverage",
+        "conf0.7_wrong",
+        "conf0.7_error_rate",
+        "conf0.9_accepted",
+        "conf0.9_coverage",
+        "conf0.9_wrong",
+        "conf0.9_error_rate",
+        "conf0.95_accepted",
+        "conf0.95_coverage",
+        "conf0.95_wrong",
+        "conf0.95_error_rate",
+        "selective_0.5",
+        "selective_0.7",
+        "selective_0.9",
+        "pooled_ece15"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "67e789d8b880890e1314d301749d0845177a4b10bfed7f41aaf612279fdcf037"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/order_model_paired.csv",
+      "rows": 24,
+      "kept_columns": [
+        "purpose",
+        "A",
+        "B",
+        "estimand",
+        "metric",
+        "difference",
+        "ci95_low",
+        "ci95_high",
+        "n",
+        "replicates",
+        "seed",
+        "cluster"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "02712f28f155268017be76edbcef18588b7dd5d7cf1f10cfaf9a2522dc2105a0"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/order_robustness.csv",
+      "rows": 40,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "dataset",
+        "n",
+        "permutation_accuracy",
+        "original_correct",
+        "all_rotation_correct",
+        "any_answer_flip",
+        "ensemble_correct",
+        "mean_TV_to_original",
+        "max_probability_drift",
+        "sum_rotation_latency_ms",
+        "original_rotation_latency_ms"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "53f351d7a5ba3649d0337953458a6d32d88117eff7f5bf7a35ae445842479038"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/order_robustness_paired.csv",
+      "rows": 40,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "estimand",
+        "metric",
+        "difference",
+        "ci95_low",
+        "ci95_high",
+        "n",
+        "replicates",
+        "seed",
+        "cluster"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "2f195d87eb734407004fc8705361344f30de2647fedf32a72c46f122a8874d2f"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/paired_comparisons.csv",
+      "rows": 330,
+      "kept_columns": [
+        "purpose",
+        "comparison",
+        "A",
+        "B",
+        "view",
+        "dataset",
+        "metric",
+        "difference",
+        "ci95_low",
+        "ci95_high",
+        "n",
+        "replicates",
+        "seed",
+        "cluster"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "beb20333aa2911b7aac440f3fdfe98fc9f646fdee45f1d9f11cb9482e0f0efc5"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/recipe_seed_summary.csv",
+      "rows": 18,
+      "kept_columns": [
+        "purpose",
+        "view",
+        "recipe",
+        "smoothing",
+        "seed_n",
+        "seeds",
+        "accuracy_mean",
+        "accuracy_sample_sd",
+        "nll_mean",
+        "nll_sample_sd",
+        "brier_mean",
+        "brier_sample_sd",
+        "ece15_mean",
+        "ece15_sample_sd"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "550b4a93f288ad0800d84c98f32afabb36eaf9b7860015d90cecece05417fe39"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/request_completion.csv",
+      "rows": 58,
+      "kept_columns": [
+        "run",
+        "status",
+        "planned",
+        "saved",
+        "failed"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "e6eafb93c58e81e2403fac6e3bfa767e81405f493b6a0b66eb53417db79a26a8"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/timing_summary.csv",
+      "rows": 7,
+      "kept_columns": [
+        "model",
+        "blocks",
+        "request_n",
+        "block_mean_ms",
+        "mean_ms",
+        "block_sample_sd_ms"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "e0b4bf0cb26811726120a7688ac300bd9547e9cbd1ba7aa92e9113a20f0f02af"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/training_matrix.csv",
+      "rows": 23,
+      "kept_columns": [
+        "run",
+        "seed",
+        "recipe",
+        "smoothing",
+        "G_n",
+        "item_exposures",
+        "updates",
+        "epochs",
+        "training_seconds",
+        "total_wall_seconds",
+        "reused",
+        "final_sha256",
+        "committed_log_hash_check",
+        "parameter_change_check"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "256625384e1e0db7a5cebc61ba7af6b1f693f0e666b7d791e8bd3e601ca552ac"
+    },
+    {
+      "public_file": "typed_decision_phase2/results/transfer_results.csv",
+      "rows": 54,
+      "kept_columns": [
+        "purpose",
+        "model",
+        "view",
+        "dataset",
+        "planned_n",
+        "valid_n",
+        "invalid_or_missing_n",
+        "correct",
+        "accuracy",
+        "nll",
+        "brier",
+        "ece15",
+        "ece10",
+        "mean_latency_ms",
+        "median_latency_ms",
+        "p95_latency_ms",
+        "entropy",
+        "margin",
+        "logit_sd",
+        "conf0.7_accepted",
+        "conf0.7_coverage",
+        "conf0.7_wrong",
+        "conf0.7_error_rate",
+        "conf0.9_accepted",
+        "conf0.9_coverage",
+        "conf0.9_wrong",
+        "conf0.9_error_rate",
+        "conf0.95_accepted",
+        "conf0.95_coverage",
+        "conf0.95_wrong",
+        "conf0.95_error_rate",
+        "selective_0.5",
+        "selective_0.7",
+        "selective_0.9",
+        "pooled_ece15",
+        "seed",
+        "matched_model",
+        "matched_accuracy",
+        "accuracy_minus_matched",
+        "matched_nll",
+        "nll_minus_matched",
+        "G_n",
+        "C_T_n"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "d6750123b3e79aedc3d9e0284aa99e6eccfdc1e67b78b71dbb07b25869cfde63"
+    },
+    {
+      "public_file": "typed_decision_phase2/manifests/run_matrix_at_freeze.csv",
+      "rows": 34,
+      "kept_columns": [
+        "run_id",
+        "module",
+        "seed",
+        "dependencies",
+        "estimated_minutes",
+        "optional",
+        "status",
+        "reused",
+        "reason"
+      ],
+      "removed_columns": [
+        "evidence"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "ab296b2d679ce6b17e6fb6ab2a59870d5c84b93f8b98d1762b30b7f7128d2e34"
+    },
+    {
+      "public_file": "docs/citation_claim_map.csv",
+      "rows": 14,
+      "kept_columns": [
+        "citation_key",
+        "original_reference_id",
+        "title",
+        "authors_or_organization",
+        "bib_year",
+        "year_basis",
+        "version_or_revision",
+        "doi",
+        "url",
+        "prior_snapshot_sha_check",
+        "support_round_read_scope",
+        "prior_phase2_read_scope",
+        "supported_claim",
+        "not_supported",
+        "support_round_check_status",
+        "human_review_status",
+        "manuscript_wide_citation_checked",
+        "model_or_runtime_revision",
+        "date_checked_utc",
+        "artifact_versus_paper"
+      ],
+      "removed_columns": [
+        "local_primary_source"
+      ],
+      "retained_values_exact": true,
+      "source_sha256": "db243aa7a0ee1a2c9369477d05e44b290c818bd60359af871ace767cc0243acb"
+    }
+  ]
+}

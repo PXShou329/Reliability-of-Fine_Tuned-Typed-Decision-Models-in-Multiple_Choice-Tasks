@@ -1,0 +1,13 @@
+module,status,planned_model_conditions,completed_model_conditions,planned_conditions,completed_conditions,condition_unit,planned_outputs,completed_outputs,actual_output_exists,note
+A0,COMPLETED,0,0,1,1,evidence audit,1,1,True,AI evidence review; human reviewed0
+A1,COMPLETED,1,1,1,1,model/checkpoint old-new evaluation,840,840,True,outputs overlap other modules; do not sum matrix counts
+B1,COMPLETED,6,6,6,6,model/checkpoint old-new evaluation,5040,5040,True,outputs overlap other modules; do not sum matrix counts
+B2,COMPLETED,5,5,5,5,model cyclic-view evaluation,7650,7650,True,outputs overlap other modules; do not sum matrix counts
+B3,COMPLETED,4,4,4,4,model/checkpoint old-new evaluation,1680,1680,True,outputs overlap other modules; do not sum matrix counts
+C1,COMPLETED,0,0,4,4,live routing policy,960,960,True,outputs overlap other modules; do not sum matrix counts
+C2,COMPLETED,0,0,8,8,formal model/control condition,320,320,True,outputs overlap other modules; do not sum matrix counts
+D1,COMPLETED,1,1,1,1,model/checkpoint old-new evaluation,840,840,True,outputs overlap other modules; do not sum matrix counts
+D2,COMPLETED,3,3,3,3,model/checkpoint old-new evaluation,2520,2520,True,900 point reused from B1 CE/s0; no duplicated training
+D3,COMPLETED,3,3,3,3,model/checkpoint old-new evaluation,2520,2520,True,outputs overlap other modules; do not sum matrix counts
+D4,COMPLETED,8,8,8,8,model/checkpoint old-new evaluation,3360,3360,True,optional second/third LODO seeds; all folds retained
+D5,COMPLETED,1,1,1,1,model/checkpoint old-new evaluation,840,840,True,outputs overlap other modules; do not sum matrix counts

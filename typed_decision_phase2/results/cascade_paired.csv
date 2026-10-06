@@ -1,0 +1,7 @@
+comparison,metric,difference,ci95_low,ci95_high,n,replicates,seed,cluster
+always_small_minus_always_expert,correct,-0.4458333333333333,-0.5083333333333334,-0.3791666666666667,240,10000,260616,normalized stem within dataset; macro equal weight; conditional on checkpoint seed
+always_small_minus_always_expert,end_to_end_ms,-177.87323416596337,-178.95466162640332,-176.89636407325452,240,10000,260616,normalized stem within dataset; macro equal weight; conditional on checkpoint seed
+confidence_minus_always_expert,correct,0.0,0.0,0.0,240,10000,260616,normalized stem within dataset; macro equal weight; conditional on checkpoint seed
+confidence_minus_always_expert,end_to_end_ms,-0.7597004162865536,-1.609653135365079,-0.029984426740460052,240,10000,260616,normalized stem within dataset; macro equal weight; conditional on checkpoint seed
+random_minus_always_expert,correct,0.0,0.0,0.0,240,10000,260616,normalized stem within dataset; macro equal weight; conditional on checkpoint seed
+random_minus_always_expert,end_to_end_ms,-0.3839541670458857,-1.389650770964484,0.693493810188859,240,10000,260616,normalized stem within dataset; macro equal weight; conditional on checkpoint seed

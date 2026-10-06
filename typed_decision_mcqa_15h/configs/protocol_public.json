@@ -1,0 +1,62 @@
+{
+  "publication_view": true,
+  "original_frozen_config": {
+    "experiment_id": "typed_mcqa_20261006_v1",
+    "status": "frozen",
+    "primary_models": [
+      "laya_base",
+      "laya_finetuned",
+      "clef_flash"
+    ],
+    "max_len": 512,
+    "head_max_len": 192,
+    "clef_max_length": 16384,
+    "evaluation_batch_size": 1,
+    "warmup": {
+      "source": "first ARC train-only pilot item",
+      "iterations": 3
+    },
+    "laya_precision": "FP32 weights with BF16 autocast; native choice temperature for base",
+    "clef_precision": "NF4 double-quantized backbone, BF16 compute and official joint decision head",
+    "seed": 20261006,
+    "training": {
+      "seed": 20261006,
+      "epochs": 4,
+      "micro_batch": 8,
+      "gradient_accumulation": 8,
+      "effective_batch_size": 64,
+      "lr_encoder": 2.5e-05,
+      "lr_head": 0.0001,
+      "weight_decay": 0.01,
+      "group_size": 4,
+      "sigma_start": 0.4,
+      "sigma_end": 0.1,
+      "loss": "official GRPO noisy logits proper_reward(w_sph=.75,w_rps=1) plus CE coefficient 1",
+      "gradient_clip": 1.0,
+      "scheduler": "cosine to 1e-6; exact ceil update count",
+      "checkpoint_every_updates": 10,
+      "checkpoint_selection": "fourth final epoch, independent of formal evaluation",
+      "calibration": "300 reserved official train items, global choice temperature via official LBFGS, clamp [.5,5]",
+      "export_weights": "FP32 to preserve trained values"
+    },
+    "metrics": {
+      "accuracy": "argmax original option order; first index breaks ties",
+      "brier": "mean per-item sum over classes of (p-y)^2; no division by k",
+      "nll": "natural log, probability floor 1e-12; clipping count reported",
+      "ece": "15 equal-width bins on max option probability; last bin includes 1",
+      "macro_average": "unweighted mean of the three dataset metrics",
+      "latency": "single item tokenization, forward, probability decode and CUDA synchronization; excludes disk writes and model load",
+      "memory": "1-second sampled total device memory including other processes; torch allocated/reserved separately"
+    },
+    "invalid_output_policy": "stop affected batch, preserve error, repair infrastructure with deviation log, rerun affected items; never substitute a model answer",
+    "random_baseline": "analytical uniform probabilities; expected accuracy 1/k (no simulated random draw used as evidence)",
+    "secondary_analysis": [
+      "uncalibrated base and fine-tuned metrics reconstructed from saved raw logits with T=1",
+      "paired dataset-stratified bootstrap 10000 repetitions seed 20261006; repeated normalized stems clustered within dataset",
+      "high-confidence errors threshold .9",
+      "deterministic replay first three items per dataset plus highest-confidence disagreement"
+    ],
+    "optional_models": "Kev only if core completion and report reserve allow; Clef27B/Jev/additional fine-tuning/cross-domain/multimodal omitted",
+    "no_result_dependent_changes": true
+  }
+}
